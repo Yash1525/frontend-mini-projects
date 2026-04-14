@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 10px gray;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div>Starters</div>
+    <div>Main Course</div>
+    <div>Desserts</div>
+</nav>
+
+<div class="menu">
+
+<div class="card">
+<img src="/images.jpg/Pizza.jpg">
+<h3>Pizza</h3>
+<p>$10</p>
+</div>
+
+<div class="card">
+<img src="/images.jpg/Burger.jpg">
+<h3>Burger</h3>
+<p>$8</p>
+</div>
+
+<div class="card">
+<img src="/images.jpg/Pasta.jpg">
+<h3>Pasta</h3>
+<p>$12</p>
+</div>
+
+</div>
+
+</body>
+</html>
